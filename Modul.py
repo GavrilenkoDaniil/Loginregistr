@@ -1,6 +1,6 @@
 from funktsioonid import *
-users=["Daniil"]
-passwords=["12345"]
+users=loe_failist_listisse("users.txt")
+passwords=loe_failist_listisse("passwords.txt")
 A=""
 I=""
 
@@ -44,6 +44,8 @@ while True:
                     print("Vale parool või login")
     elif v==3:
         print("Välja")
+        aa("users.txt",users)
+        aa("passwords.txt",passwords)
         break
     else:
         print("On vaja valida 1,2 või 3")

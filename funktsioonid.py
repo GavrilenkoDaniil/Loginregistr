@@ -26,3 +26,18 @@ def paskontroll(psword: str)->bool:
 		t=False
 	return t
 
+def loe_failist_listisse(file:str)->list:
+    """Loeme tekst failist ja salvesta järjendisse
+    """
+    f=open(file,'r')
+    list_=[]
+    for stroka in f:
+        list_.append(stroka.strip())
+    f.close()
+    return list_
+
+def aa(file:str,list_:list):
+    """
+    """
+    f=open(file,'w')
+	for slovo in list_:

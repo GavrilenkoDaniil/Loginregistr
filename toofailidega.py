@@ -31,11 +31,13 @@ for i in range(10):
     salvesta_failisse("Loetelu.txt")
 
 def aa(file:str):
-    """Changing text in file
+    """
     """
     text=input("Sisesta uus tekst:")
     with open(file,'w') as f: #Не надо делать .close
         f.write(text+'\n')
 
 aa(input("Faili nimetus")+".txt")
+
+
   
