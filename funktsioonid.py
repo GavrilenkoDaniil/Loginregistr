@@ -37,7 +37,8 @@ def loe_failist_listisse(file:str)->list:
     return list_
 
 def aa(file:str,list_:list):
-    """
-    """
-    f=open(file,'w')
-	for slovo in list_:
+	"""
+	"""
+	with open(file,'w') as f: #Не надо делать .close
+		for slovo in list_:
+			f.write(slovo+'\n')
